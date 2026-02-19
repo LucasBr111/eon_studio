@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Studio — Quiénes Somos | Eón Solutions</title>
+  <meta name="description" content="Conocé a Eón Solutions: un estudio de desarrollo web en Ciudad del Este, Paraguay. Nuestra historia, misión, valores y el equipo detrás de cada proyecto." />
+  <link rel="canonical" href="https://eonsolutions.com.py/nosotros.html" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://eonsolutions.com.py/nosotros.html" />
+  <meta property="og:title"       content="Studio — Eón Solutions" />
+  <meta property="og:description" content="Conocé el equipo y la historia detrás de Eón Solutions." />
+  <meta property="og:image"       content="assets/img/og-studio.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/variables.css" />
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/nosotros.css" />
+
+  <link rel="icon" href="assets/img/favicon.ico" />
+</head>
+<body>
+
+<!-- NAV -->
+<header class="nav" id="nav" role="banner">
+  <a href="index.html" class="nav__logo" aria-label="Eón Solutions — Inicio">
+    <span class="nav__logo-text">EÓN <span>/ Solutions</span></span>
+  </a>
+  <nav class="nav__links" aria-label="Navegación principal">
+    <a href="index.html"    class="nav__link">Inicio</a>
+    <a href="nosotros.html" class="nav__link">Studio</a>
+    <a href="servicios.html" class="nav__link">Servicios</a>
+    <a href="index.html#contacto" class="nav__link">Contacto</a>
+  </nav>
+  <div class="nav__right">
+    <a href="mailto:contacto@eonsolutions.com.py" class="nav__icon d-only" aria-label="Email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+    </a>
+    <a href="https://wa.me/TU_NUMERO" class="nav__icon d-only" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L0 24l6.335-1.652A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.645-.52-5.148-1.424l-.369-.218-3.761.981.999-3.657-.239-.381A9.938 9.938 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    </a>
+    <div class="nav__sep"></div>
+    <button class="nav__burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav-modal">
+      <span class="nav__burger-bar"></span>
+      <span class="nav__burger-bar"></span>
+      <span class="nav__burger-bar"></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav__modal" id="nav-modal" aria-hidden="true">
+  <div class="nav__modal-links">
+    <a href="index.html"     class="nav__modal-link">Inicio</a>
+    <a href="nosotros.html"  class="nav__modal-link">Studio</a>
+    <a href="servicios.html" class="nav__modal-link">Servicios</a>
+    <a href="index.html#contacto" class="nav__modal-link">Contacto</a>
+  </div>
+  <div class="nav__modal-footer">
+    <a href="index.html#contacto" class="nav__modal-cta">Presupuesto</a>
+    <div class="nav__modal-icons">
+      <a href="mailto:contacto@eonsolutions.com.py" class="nav__modal-icon" aria-label="Email"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+      <a href="https://wa.me/TU_NUMERO" class="nav__modal-icon" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L0 24l6.335-1.652A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.645-.52-5.148-1.424l-.369-.218-3.761.981.999-3.657-.239-.381A9.938 9.938 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a>
+    </div>
+  </div>
+</div>
+
+<main>
+
+  <!-- ═══════════════════════════════
+       PAGE HERO
+  ═══════════════════════════════ -->
+  <section class="page-hero section section--dark" aria-label="Studio">
+    <div class="container">
+      <nav class="page-hero__breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Inicio</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="12" height="12" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        <span aria-current="page">Studio</span>
+      </nav>
+      <div class="page-hero__tag">
+        <span class="badge">Quiénes somos</span>
+      </div>
+      <h1 class="heading-xl page-hero__title reveal">
+        Somos Eón<br><span class="text-gradient">Solutions</span>
+      </h1>
+      <p class="body-lg page-hero__sub reveal delay-1">
+        Un estudio digital con base en Ciudad del Este. Ayudamos a negocios reales a proyectar profesionalismo y generar confianza a través de su presencia web.
+      </p>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       HISTORIA / INTRO (light)
+  ═══════════════════════════════ -->
+  <section class="section section--light section-pad" id="historia" aria-labelledby="historia-title">
+    <div class="container">
+      <div class="about-intro">
+
+        <div class="about-intro__text">
+          <span class="label reveal">Nuestra historia</span>
+          <span class="label-sep reveal"></span>
+          <h2 class="heading-lg reveal" id="historia-title">Por qué existe<br>Eón Solutions</h2>
+          <p class="body-lg reveal delay-1">
+            <!-- TODO: completar con historia real del studio -->
+            Vimos de cerca cómo negocios locales perdían clientes por no tener una presencia digital a la altura de su calidad real. Empresas buenas, con precios competitivos y excelente servicio, invisibles en internet.
+          </p>
+          <p class="body-md reveal delay-2" style="margin-top: var(--sp-5); color: var(--text-on-light-secondary);">
+            Decidimos cambiar eso. No con plantillas genéricas ni soluciones de una talla para todos, sino con diseño pensado y desarrollo a medida para cada proyecto.
+          </p>
+        </div>
+
+        <div class="about-intro__stats" aria-label="Números del studio">
+          <div class="about-stat reveal delay-1">
+            <span class="about-stat__num">+30</span>
+            <span class="about-stat__label">Proyectos entregados</span>
+          </div>
+          <div class="about-stat reveal delay-2">
+            <span class="about-stat__num">2</span>
+            <span class="about-stat__label">Años de experiencia</span>
+          </div>
+          <div class="about-stat reveal delay-3">
+            <span class="about-stat__num">100%</span>
+            <span class="about-stat__label">Clientes satisfechos</span>
+          </div>
+          <div class="about-stat reveal delay-4">
+            <span class="about-stat__num">24h</span>
+            <span class="about-stat__label">Tiempo de respuesta</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       MISIÓN + VISIÓN (dark)
+  ═══════════════════════════════ -->
+  <section class="section section--dark section-pad" id="mision" aria-labelledby="mision-title">
+    <div class="container">
+
+      <div class="mv-grid">
+
+        <div class="mv-card reveal">
+          <div class="mv-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h2 class="mv-card__title" id="mision-title">Misión</h2>
+          <p class="mv-card__body">
+            <!-- TODO: completar con misión real -->
+            Ayudar a empresas locales a consolidarse en el mundo digital a través de soluciones web profesionales, asequibles y orientadas a resultados concretos.
+          </p>
+        </div>
+
+        <div class="mv-card reveal delay-1">
+          <div class="mv-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h2 class="mv-card__title">Visión</h2>
+          <p class="mv-card__body">
+            <!-- TODO: completar con visión real -->
+            Ser el estudio de referencia en desarrollo web para PyMEs de la región, siendo reconocidos por la calidad de nuestro trabajo y la cercanía con cada cliente.
+          </p>
+        </div>
+
+        <div class="mv-card reveal delay-2">
+          <div class="mv-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h2 class="mv-card__title">Compromiso</h2>
+          <p class="mv-card__body">
+            <!-- TODO: completar con texto de compromiso -->
+            Cada proyecto que tomamos es tratado con la misma dedicación, sin importar el tamaño. Tu negocio merece el mismo nivel de excelencia que cualquier empresa grande.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       VALORES (light)
+  ═══════════════════════════════ -->
+  <section class="section section--light section-pad" id="valores" aria-labelledby="valores-title">
+    <div class="container">
+
+      <div style="text-align: center; margin-bottom: var(--sp-16);">
+        <span class="label reveal">ADN del studio</span>
+        <span class="label-sep reveal" style="margin: var(--sp-3) auto var(--sp-5);"></span>
+        <h2 class="heading-lg reveal" id="valores-title">Nuestros valores</h2>
+      </div>
+
+      <ul class="values-grid" aria-label="Valores de Eón Solutions">
+
+        <li class="value-card card card--light reveal">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+          </div>
+          <h3 class="card__title">Transparencia</h3>
+          <p class="card__body">Presupuestos claros, plazos reales y comunicación directa durante todo el proceso. Sin letra chica.</p>
+        </li>
+
+        <li class="value-card card card--light reveal delay-1">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          </div>
+          <h3 class="card__title">Eficiencia</h3>
+          <p class="card__body">Código optimizado y sitios rápidos. Cada decisión técnica tiene un propósito: rendimiento y escalabilidad.</p>
+        </li>
+
+        <li class="value-card card card--light reveal delay-2">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3 class="card__title">Colaboración</h3>
+          <p class="card__body">Tu conocimiento del negocio más nuestra expertise técnica. Los mejores resultados nacen de esa combinación.</p>
+        </li>
+
+        <li class="value-card card card--light reveal delay-3">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3 class="card__title">Puntualidad</h3>
+          <p class="card__body">Cumplimos los plazos acordados. Sabemos que tu negocio no puede esperar y trabajamos en consecuencia.</p>
+        </li>
+
+        <li class="value-card card card--light reveal delay-4">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+          </div>
+          <h3 class="card__title">Mejora continua</h3>
+          <p class="card__body">El mundo digital cambia rápido. Nos mantenemos actualizados para ofrecerte siempre las mejores soluciones.</p>
+        </li>
+
+        <li class="value-card card card--light reveal delay-5">
+          <div class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          </div>
+          <h3 class="card__title">Impacto local</h3>
+          <p class="card__body">Somos de Ciudad del Este y creemos en el crecimiento de los negocios locales. Eso nos motiva a dar lo mejor.</p>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       EQUIPO (dark)
+  ═══════════════════════════════ -->
+  <section class="section section--dark section-pad" id="equipo" aria-labelledby="equipo-title">
+    <div class="container">
+
+      <div style="margin-bottom: var(--sp-16);">
+        <span class="label reveal">Las personas detrás</span>
+        <span class="label-sep reveal"></span>
+        <h2 class="heading-lg reveal" id="equipo-title">El equipo</h2>
+        <p class="body-md reveal delay-1" style="max-width: 480px; color: var(--text-on-dark-secondary); margin-top: var(--sp-4);">
+          Cuando trabajás con nosotros, sabés exactamente con quién estás hablando.
+        </p>
+      </div>
+
+      <ul class="team-grid" aria-label="Integrantes del equipo">
+
+        <!-- TODO: completar con datos reales del equipo -->
+        <li class="team-card reveal">
+          <div class="team-card__photo" aria-hidden="true">
+            <!-- <img src="assets/img/team/nombre.jpg" alt="Nombre Apellido" /> -->
+            <div class="team-card__photo-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Tu nombre aquí</h3>
+            <p class="team-card__role">Desarrollador / Co-fundador</p>
+            <p class="team-card__bio"><!-- TODO: mini bio 1-2 líneas --></p>
+            <div class="team-card__links">
+              <a href="#" class="btn-icon" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </div>
+        </li>
+
+        <li class="team-card reveal delay-1">
+          <div class="team-card__photo" aria-hidden="true">
+            <div class="team-card__photo-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+          </div>
+          <div class="team-card__info">
+            <h3 class="team-card__name">Tu nombre aquí</h3>
+            <p class="team-card__role">Diseñadora / Co-fundadora</p>
+            <p class="team-card__bio"><!-- TODO: mini bio 1-2 líneas --></p>
+            <div class="team-card__links">
+              <a href="#" class="btn-icon" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              </a>
+            </div>
+          </div>
+        </li>
+
+      </ul>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       TECNOLOGÍAS (light)
+  ═══════════════════════════════ -->
+  <section class="section section--light section-pad" id="tecnologias" aria-labelledby="tech-title">
+    <div class="container">
+
+      <div class="tech-layout">
+
+        <div>
+          <span class="label reveal">Stack técnico</span>
+          <span class="label-sep reveal"></span>
+          <h2 class="heading-lg reveal" id="tech-title">Herramientas<br>que usamos</h2>
+          <p class="body-md reveal delay-1" style="max-width: 380px; color: var(--text-on-light-secondary); margin-top: var(--sp-5);">
+            Elegimos la tecnología según cada proyecto. Sin atarnos a una sola solución, siempre priorizando rendimiento y mantenibilidad.
+          </p>
+        </div>
+
+        <ul class="tech-list" aria-label="Tecnologías utilizadas">
+          <!-- TODO: ajustar según stack real -->
+          <li class="tech-item reveal delay-1">
+            <div class="tech-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div>
+              <div class="tech-item__name">HTML5 / CSS3 / JS</div>
+              <div class="tech-item__desc">Base de todo. Sin dependencias innecesarias.</div>
+            </div>
+          </li>
+          <li class="tech-item reveal delay-2">
+            <div class="tech-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <div>
+              <div class="tech-item__name">React / Next.js</div>
+              <div class="tech-item__desc">Para proyectos que requieren dinamismo y escalabilidad.</div>
+            </div>
+          </li>
+          <li class="tech-item reveal delay-3">
+            <div class="tech-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <div>
+              <div class="tech-item__name">WordPress / CMS</div>
+              <div class="tech-item__desc">Cuando el cliente necesita gestionar su propio contenido.</div>
+            </div>
+          </li>
+          <li class="tech-item reveal delay-4">
+            <div class="tech-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.19 12 19.79 19.79 0 0 1 1.14 3.4 2 2 0 0 1 3.12 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.4A16 16 0 0 0 15.6 16.1l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 23.73 17"/></svg>
+            </div>
+            <div>
+              <div class="tech-item__name">Integración WhatsApp API</div>
+              <div class="tech-item__desc">Botones y flujos directos al canal más usado del cliente.</div>
+            </div>
+          </li>
+          <li class="tech-item reveal delay-5">
+            <div class="tech-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+            </div>
+            <div>
+              <div class="tech-item__name">SEO On-Page</div>
+              <div class="tech-item__desc">Meta tags, estructura semántica, velocidad y Open Graph en cada proyecto.</div>
+            </div>
+          </li>
+          <li class="tech-item reveal delay-6">
+            <div class="tech-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div class="tech-item__name">Hosting + SSL + Backups</div>
+              <div class="tech-item__desc">Infraestructura robusta para que tu sitio nunca se caiga.</div>
+            </div>
+          </li>
+        </ul>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════
+       CTA FINAL (dark)
+  ═══════════════════════════════ -->
+  <section class="section section--dark section-pad-sm" aria-label="Llamado a la acción">
+    <div class="container">
+      <div class="studio-cta reveal" style="text-align: center;">
+        <span class="label" style="display: block; margin-bottom: var(--sp-4);">¿Trabajamos juntos?</span>
+        <h2 class="heading-md" style="margin-bottom: var(--sp-4);">Primera reunión sin compromiso</h2>
+        <p class="body-md" style="color: var(--text-on-dark-secondary); margin-bottom: var(--sp-8); max-width: 480px; margin-left: auto; margin-right: auto;">Contanos tu proyecto y en menos de 24hs te respondemos con una propuesta.</p>
+        <div style="display: flex; gap: var(--sp-4); justify-content: center; flex-wrap: wrap;">
+          <a href="index.html#contacto" class="btn btn--primary">Solicitar presupuesto</a>
+          <a href="servicios.html" class="btn btn--ghost">Ver servicios</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="footer" role="contentinfo">
+  <div class="footer__main">
+    <div class="footer__brand">
+      <a href="index.html" class="footer__logo" aria-label="Eón Solutions"><span class="footer__logo-text">EÓN <span>/ Solutions</span></span></a>
+      <p class="footer__desc">Estudio de desarrollo web en Ciudad del Este. Diseño moderno, desarrollo a medida y precios justos.</p>
+      <div class="footer__location"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>Ciudad del Este, Paraguay</div>
+      <nav class="footer__social" aria-label="Redes">
+        <a href="https://instagram.com/eonsolutions" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+        <a href="https://wa.me/TU_NUMERO" class="footer__social-link" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L0 24l6.335-1.652A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.645-.52-5.148-1.424l-.369-.218-3.761.981.999-3.657-.239-.381A9.938 9.938 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg></a>
+      </nav>
+    </div>
+    <div>
+      <p class="footer__col-title">Páginas</p>
+      <nav class="footer__col-links" aria-label="Páginas"><a href="index.html" class="footer__col-link">Inicio</a><a href="nosotros.html" class="footer__col-link">Studio</a><a href="servicios.html" class="footer__col-link">Servicios</a><a href="index.html#contacto" class="footer__col-link">Contacto</a></nav>
+    </div>
+    <div>
+      <p class="footer__col-title">Contacto</p>
+      <div class="footer__col-links">
+        <a href="https://wa.me/TU_NUMERO" class="footer__contact-item" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" style="width:13px;height:13px;color:var(--accent)"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347zM12 0C5.373 0 0 5.373 0 12c0 2.123.555 4.116 1.528 5.845L0 24l6.335-1.652A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.886 0-3.645-.52-5.148-1.424l-.369-.218-3.761.981.999-3.657-.239-.381A9.938 9.938 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>+595 (TU NÚMERO)</a>
+        <a href="mailto:contacto@eonsolutions.com.py" class="footer__contact-item"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="width:13px;height:13px;color:var(--accent)"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>contacto@eonsolutions.com.py</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <p class="footer__copy">© 2025 <span>Eón Solutions</span>. Todos los derechos reservados.</p>
+    <nav class="footer__legal" aria-label="Legal"><a href="privacidad.html" class="footer__legal-link">Privacidad</a><a href="terminos.html" class="footer__legal-link">Términos</a></nav>
+  </div>
+</footer>
+
+<script src="assets/js/nav.js"></script>
+
+</body>
+</html>

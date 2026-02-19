@@ -1,0 +1,266 @@
+/* ============================================================
+   SERVICIOS.CSS — EÓN SOLUTIONS
+   Estilos específicos de la página Servicios
+   ============================================================ */
+
+/* ════════════════════════════════
+   SERVICE DETAIL LAYOUT
+════════════════════════════════ */
+
+.service-detail {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: var(--sp-20);
+  align-items: start;
+}
+
+.service-detail--reversed {
+  direction: rtl;
+}
+
+.service-detail--reversed > * {
+  direction: ltr;
+}
+
+/* Número grande decorativo */
+.service-detail__num {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  letter-spacing: var(--tracking-tightest);
+  color: var(--neutral-200);
+  line-height: 1;
+  margin-bottom: var(--sp-2);
+  opacity: 0.5;
+}
+
+.service-detail__num--light {
+  color: var(--purple-700);
+  opacity: 0.3;
+}
+
+/* Precio */
+.service-detail__price {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+  margin-top: var(--sp-6);
+  padding: var(--sp-5) var(--sp-6);
+  border: 1px solid var(--border-medium);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.service-detail__price--dark {
+  border-color: var(--border-accent);
+  background: var(--accent-dim);
+  box-shadow: none;
+}
+
+.service-detail__price-label {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-widest);
+  text-transform: uppercase;
+  color: var(--text-on-light-muted);
+}
+
+.service-detail__price--dark .service-detail__price-label {
+  color: var(--text-on-dark-muted);
+}
+
+.service-detail__price-amount {
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-xl), 3vw, var(--text-3xl));
+  letter-spacing: var(--tracking-tight);
+  color: var(--accent);
+  line-height: 1;
+}
+
+.service-detail__price--dark .service-detail__price-amount {
+  color: var(--purple-100);
+}
+
+/* Ideal para */
+.service-detail__ideal {
+  margin-top: var(--sp-6);
+}
+
+.service-detail__ideal-label {
+  font-size: var(--text-xs);
+  font-weight: var(--weight-semibold);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-on-light-muted);
+  display: block;
+  margin-bottom: var(--sp-3);
+}
+
+.service-detail__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+}
+
+/* Features title */
+.service-detail__features-title {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  letter-spacing: var(--tracking-wider);
+  text-transform: uppercase;
+  color: var(--text-on-light-primary);
+  margin-bottom: var(--sp-6);
+  padding-bottom: var(--sp-4);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.service-detail__features-title--dark {
+  color: var(--text-on-dark-primary);
+  border-bottom-color: var(--border-dark);
+}
+
+
+/* ════════════════════════════════
+   FEATURE LIST
+════════════════════════════════ */
+
+.feature-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  list-style: none;
+}
+
+.feature-item {
+  display: flex;
+  gap: var(--sp-4);
+  padding: var(--sp-5) 0;
+  border-bottom: 1px solid var(--border-light);
+  align-items: flex-start;
+}
+
+.feature-item:last-child { border-bottom: none; }
+
+.feature-item--dark { border-bottom-color: var(--border-dark); }
+
+.feature-item__check {
+  width: 18px;
+  height: 18px;
+  color: var(--accent);
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.feature-item strong {
+  display: block;
+  font-size: var(--text-base);
+  font-weight: var(--weight-semibold);
+  color: var(--text-on-light-primary);
+  margin-bottom: var(--sp-1);
+}
+
+.feature-item--dark strong {
+  color: var(--text-on-dark-primary);
+}
+
+.feature-item p {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--text-on-light-secondary);
+}
+
+.feature-item--dark p {
+  color: var(--text-on-dark-secondary);
+}
+
+
+/* ════════════════════════════════
+   FAQ
+════════════════════════════════ */
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--sp-20);
+  align-items: start;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq-item {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.faq-item:first-child { border-top: 1px solid var(--border-light); }
+
+.faq-item__q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  padding: var(--sp-5) 0;
+  font-size: var(--text-base);
+  font-weight: var(--weight-semibold);
+  color: var(--text-on-light-primary);
+  cursor: pointer;
+  user-select: none;
+  transition: color var(--duration-fast);
+  list-style: none;
+}
+
+.faq-item__q:hover { color: var(--accent); }
+
+.faq-item__icon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  color: var(--text-on-light-muted);
+  transition: transform var(--duration-base) var(--ease);
+}
+
+.faq-item.open .faq-item__icon { transform: rotate(180deg); }
+.faq-item.open .faq-item__q    { color: var(--accent); }
+
+.faq-item__a {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--text-on-light-secondary);
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height var(--duration-slow) var(--ease);
+  padding-bottom: 0;
+}
+
+.faq-item.open .faq-item__a {
+  padding-bottom: var(--sp-5);
+}
+
+
+/* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .service-detail { gap: var(--sp-12); }
+  .faq-layout     { gap: var(--sp-12); }
+}
+
+@media (max-width: 860px) {
+  .service-detail,
+  .service-detail--reversed {
+    grid-template-columns: 1fr;
+    direction: ltr;
+  }
+
+  .faq-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 540px) {
+  .service-detail__tags { gap: var(--sp-2); }
+}

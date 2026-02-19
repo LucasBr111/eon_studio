@@ -1,0 +1,291 @@
+/* ============================================================
+   NOSOTROS.CSS — EÓN SOLUTIONS
+   Estilos específicos de la página Studio
+   ============================================================ */
+
+/* ════════════════════════════════
+   INTRO
+════════════════════════════════ */
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--sp-20);
+  align-items: start;
+}
+
+.about-intro__text {}
+.about-intro__text p + p { margin-top: var(--sp-5); }
+
+.about-intro__stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-1);
+}
+
+.about-stat {
+  padding: var(--sp-8);
+  border: 1px solid var(--border-light);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  border-radius: var(--radius-md);
+  transition: box-shadow var(--duration-base), transform var(--duration-base) var(--ease-spring);
+}
+
+.about-stat:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.about-stat__num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(var(--text-2xl), 4vw, var(--text-4xl));
+  letter-spacing: var(--tracking-tight);
+  color: var(--neutral-900);
+  line-height: 1;
+  margin-bottom: var(--sp-2);
+}
+
+.about-stat__label {
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-on-light-muted);
+}
+
+
+/* ════════════════════════════════
+   MISIÓN / VISIÓN
+════════════════════════════════ */
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+}
+
+.mv-card {
+  background: var(--bg-card-dark);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  padding: var(--sp-8);
+  transition: border-color var(--duration-base), background var(--duration-base);
+}
+
+.mv-card:hover {
+  border-color: var(--border-accent);
+  background: rgba(22, 15, 69, 0.8);
+}
+
+.mv-card__icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-accent);
+  border-radius: var(--radius-sm);
+  color: var(--purple-300);
+  margin-bottom: var(--sp-6);
+}
+
+.mv-card__icon svg { width: 20px; height: 20px; }
+
+.mv-card__title {
+  font-family: var(--font-display);
+  font-size: var(--text-lg);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: var(--sp-4);
+}
+
+.mv-card__body {
+  font-size: var(--text-base);
+  line-height: var(--leading-relaxed);
+  color: var(--text-on-dark-secondary);
+}
+
+
+/* ════════════════════════════════
+   VALORES GRID
+════════════════════════════════ */
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--sp-5);
+  list-style: none;
+}
+
+
+/* ════════════════════════════════
+   EQUIPO
+════════════════════════════════ */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 380px);
+  gap: var(--sp-8);
+  list-style: none;
+}
+
+.team-card {
+  display: flex;
+  gap: var(--sp-6);
+  padding: var(--sp-8);
+  background: var(--bg-card-dark);
+  border: 1px solid var(--border-dark);
+  border-radius: var(--radius-md);
+  transition: border-color var(--duration-base);
+}
+
+.team-card:hover { border-color: var(--border-accent); }
+
+.team-card__photo {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 1px solid var(--border-dark);
+}
+
+.team-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.team-card__photo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--purple-800);
+  color: var(--text-on-dark-muted);
+}
+
+.team-card__photo-placeholder svg { width: 32px; height: 32px; }
+
+.team-card__info {}
+
+.team-card__name {
+  font-family: var(--font-display);
+  font-size: var(--text-base);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: var(--sp-1);
+}
+
+.team-card__role {
+  font-size: var(--text-sm);
+  color: var(--purple-300);
+  margin-bottom: var(--sp-3);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+}
+
+.team-card__bio {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--text-on-dark-muted);
+  margin-bottom: var(--sp-4);
+}
+
+.team-card__links { display: flex; gap: var(--sp-2); }
+
+
+/* ════════════════════════════════
+   TECNOLOGÍAS
+════════════════════════════════ */
+
+.tech-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--sp-20);
+  align-items: start;
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-1);
+  list-style: none;
+}
+
+.tech-item {
+  display: flex;
+  gap: var(--sp-4);
+  padding: var(--sp-5);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  align-items: flex-start;
+  transition: box-shadow var(--duration-base), transform var(--duration-base) var(--ease-spring), border-color var(--duration-base);
+}
+
+.tech-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: rgba(98,71,170,0.2);
+}
+
+.tech-item__icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(98,71,170,0.2);
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.tech-item__icon svg { width: 16px; height: 16px; }
+
+.tech-item__name {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-on-light-primary);
+  margin-bottom: var(--sp-1);
+}
+
+.tech-item__desc {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--text-on-light-muted);
+}
+
+
+/* ════════════════════════════════
+   RESPONSIVE
+════════════════════════════════ */
+
+@media (max-width: 1024px) {
+  .about-intro   { gap: var(--sp-12); }
+  .tech-layout   { gap: var(--sp-12); }
+  .team-grid     { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 860px) {
+  .about-intro   { grid-template-columns: 1fr; }
+  .mv-grid       { grid-template-columns: 1fr; }
+  .values-grid   { grid-template-columns: 1fr 1fr; }
+  .tech-layout   { grid-template-columns: 1fr; }
+  .tech-list     { grid-template-columns: 1fr; }
+  .team-grid     { grid-template-columns: 1fr; max-width: 480px; }
+}
+
+@media (max-width: 540px) {
+  .about-intro__stats { grid-template-columns: 1fr; }
+  .values-grid   { grid-template-columns: 1fr; }
+  .team-card     { flex-direction: column; }
+}

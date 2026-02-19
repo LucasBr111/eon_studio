@@ -1,0 +1,153 @@
+/* ============================================================
+   VARIABLES.CSS — EÓN SOLUTIONS
+   Design tokens del sistema
+   ============================================================ */
+
+:root {
+
+  /* ── Paleta ── */
+  --purple-900:  #090627;   /* fondo oscuro principal */
+  --purple-800:  #0e0b30;
+  --purple-700:  #160f45;
+  --purple-600:  #1e1560;
+  --purple-500:  #6247AA;   /* acento principal */
+  --purple-400:  #7d62c4;
+  --purple-300:  #a990df;
+  --purple-100:  #E2CFEA;   /* acento claro */
+  --purple-50:   #f3edf8;
+
+  --neutral-950: #080808;
+  --neutral-900: #111111;
+  --neutral-800: #1a1a1a;
+  --neutral-700: #262626;
+  --neutral-600: #404040;
+  --neutral-400: #737373;
+  --neutral-300: #a3a3a3;
+  --neutral-200: #d4d4d4;
+  --neutral-100: #f5f5f5;
+  --neutral-50:  #fafafa;
+  --white:       #ffffff;
+
+  /* ── Semántica de color ── */
+  /* Dark sections */
+  --bg-dark:        var(--purple-900);
+  --bg-dark-raised: var(--purple-800);
+  --bg-card-dark:   rgba(14, 11, 48, 0.7);
+
+  /* Light sections */
+  --bg-light:       var(--neutral-50);
+  --bg-light-raised:var(--white);
+  --bg-card-light:  var(--white);
+
+  /* Texto en dark */
+  --text-on-dark-primary:   var(--white);
+  --text-on-dark-secondary: var(--neutral-300);
+  --text-on-dark-muted:     var(--neutral-600);
+  --text-on-dark-accent:    var(--purple-100);
+
+  /* Texto en light */
+  --text-on-light-primary:   var(--neutral-900);
+  --text-on-light-secondary: var(--neutral-600);
+  --text-on-light-muted:     var(--neutral-400);
+  --text-on-light-accent:    var(--purple-500);
+
+  /* Acento */
+  --accent:          var(--purple-500);
+  --accent-hover:    var(--purple-400);
+  --accent-light:    var(--purple-100);
+  --accent-dim:      rgba(98, 71, 170, 0.12);
+  --accent-glow:     rgba(98, 71, 170, 0.25);
+
+  /* Bordes */
+  --border-dark:    rgba(255, 255, 255, 0.07);
+  --border-accent:  rgba(98, 71, 170, 0.3);
+  --border-light:   rgba(0, 0, 0, 0.08);
+  --border-medium:  rgba(0, 0, 0, 0.12);
+
+  /* ── Tipografía ── */
+  --font-display: 'Michroma', sans-serif;
+  --font-body:    'Inter', sans-serif;
+
+  --text-xs:   0.625rem;   /* 10px */
+  --text-sm:   0.75rem;    /* 12px */
+  --text-base: 0.875rem;   /* 14px */
+  --text-md:   1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.375rem;   /* 22px */
+  --text-2xl:  1.75rem;    /* 28px */
+  --text-3xl:  2.25rem;    /* 36px */
+  --text-4xl:  3rem;       /* 48px */
+  --text-5xl:  3.75rem;    /* 60px */
+  --text-6xl:  4.75rem;    /* 76px */
+
+  --leading-tight:   1.1;
+  --leading-snug:    1.25;
+  --leading-normal:  1.5;
+  --leading-relaxed: 1.7;
+  --leading-loose:   1.9;
+
+  --tracking-tightest: -0.04em;
+  --tracking-tight:    -0.02em;
+  --tracking-normal:    0;
+  --tracking-wide:      0.06em;
+  --tracking-wider:     0.12em;
+  --tracking-widest:    0.2em;
+
+  --weight-light:     300;
+  --weight-regular:   400;
+  --weight-medium:    500;
+  --weight-semibold:  600;
+
+  /* ── Espaciado ── */
+  --sp-1:  0.25rem;
+  --sp-2:  0.5rem;
+  --sp-3:  0.75rem;
+  --sp-4:  1rem;
+  --sp-5:  1.25rem;
+  --sp-6:  1.5rem;
+  --sp-8:  2rem;
+  --sp-10: 2.5rem;
+  --sp-12: 3rem;
+  --sp-16: 4rem;
+  --sp-20: 5rem;
+  --sp-24: 6rem;
+  --sp-32: 8rem;
+
+  /* ── Layout ── */
+  --max-w:     1200px;
+  --max-w-sm:  680px;
+  --max-w-md:  900px;
+  --gutter:    2.5rem;
+
+  /* ── Bordes redondeados ── */
+  --radius-sm:  2px;
+  --radius-md:  4px;
+  --radius-lg:  8px;
+  --radius-xl:  16px;
+  --radius-full: 9999px;
+
+  /* ── Sombras ── */
+  --shadow-sm:   0 1px 3px rgba(0,0,0,0.08), 0 1px 2px rgba(0,0,0,0.06);
+  --shadow-md:   0 4px 16px rgba(0,0,0,0.10), 0 2px 6px rgba(0,0,0,0.06);
+  --shadow-lg:   0 10px 40px rgba(0,0,0,0.14), 0 4px 12px rgba(0,0,0,0.08);
+  --shadow-xl:   0 24px 64px rgba(0,0,0,0.18);
+  --shadow-glow: 0 0 32px rgba(98, 71, 170, 0.3);
+
+  /* ── Transiciones ── */
+  --ease:       cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out:   cubic-bezier(0, 0, 0.2, 1);
+  --ease-spring:cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --duration-fast:   120ms;
+  --duration-base:   220ms;
+  --duration-slow:   400ms;
+  --duration-slower: 700ms;
+
+  /* ── Z-index ── */
+  --z-base:    1;
+  --z-raised:  10;
+  --z-overlay: 100;
+  --z-nav:     200;
+  --z-modal:   300;
+  --z-toast:   400;
+}
