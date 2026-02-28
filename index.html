@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="assets/css/index.css" />
 
   <!-- Favicon -->
-  <link rel="icon" href="assets/img/favicon.ico" />
+  <link rel="icon" href="assets/img/favicon.png" />
 
   <!-- Schema.org -->
   <script type="application/ld+json">
@@ -169,7 +169,7 @@
             </a>
           </div>
 
-          <div class="hero__stats reveal delay-4" aria-label="Estadísticas">
+          <!-- <div class="hero__stats reveal delay-4" aria-label="Estadísticas">
             <div class="stat">
               <span class="stat__num">+30</span>
               <span class="stat__label">Proyectos</span>
@@ -184,7 +184,7 @@
               <span class="stat__num">24/7</span>
               <span class="stat__label">Tu web activa</span>
             </div>
-          </div>
+          </div> -->
 
         </div>
 
@@ -208,15 +208,183 @@
       </div>
       <!-- Scroll indicator -->
       <div class="hero__scroll" aria-hidden="true">
-      <div class="hero__scroll-star"></div>
+        <div class="hero__scroll-star"></div>
+        <div class="hero__star-decorative"></div>
+
         <span class="hero__scroll-line"></span>
       </div>
+
+      <div class="nebula-layer">
+        <div class="nebula-blob"></div>
+        <div class="nebula-blob"></div>
+        <div class="nebula-blob"></div>
+      </div>
     </section>
+ <!-- ═══════════════════════════════════════════════════════════════
+   NUEVA SECCIÓN — ¿Por qué tu negocio necesita una web hoy?
+   SECCIÓN CLARA (section--light)
+   
+   INTEGRACIÓN:
+   · Pegar JUSTO DESPUÉS del </section> del hero
+   · ANTES de #diferencial
+   · El JS bidireccional está al final (descomentarlo y fusionar)
+═══════════════════════════════════════════════════════════════ -->
+
+<!-- Transición: hero dark → esta sección light (la curva tapa el borde) -->
+<div class="section-transition" aria-hidden="true" style="background-color: #ffffff;"> 
+  <svg viewBox="0 0 1440 100" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M0,0 L1440,0 L1440,60 C960,100 480,110 0,50 Z" fill="var(--bg-dark)" />
+  </svg>
+</div>
+
+
+<section class="section section--light section-pad why-web" id="por-que" aria-labelledby="why-web-title">
+  <div class="container">
+
+    <!-- Encabezado -->
+    <div class="why-web__header">
+      <span class="label reveal">La realidad del mercado</span>
+      <span class="label-sep reveal"></span>
+      <h2 class="heading-lg reveal delay-1" id="why-web-title">
+        ¿Por qué tu negocio<br>
+        <em class="text-accent">necesita una web hoy?</em>
+      </h2>
+      <p class="why-web__lead reveal delay-2">La verdadera cara de tu empresa</p>
+      <p class="body-md why-web__desc reveal delay-3">
+        Una página web es la carta de presentación de hoy en día — la cara de tu empresa ante Paraguay y el mundo entero.
+        Es la única forma de alcanzar a tu público en un espacio totalmente tuyo, personalizado y abierto las 24/7.
+      </p>
+    </div>
+
+    <!-- Tres pilares -->
+    <div class="why-web__pillars">
+
+      <div class="why-web__pillar reveal delay-1">
+        <div class="why-web__pillar-line" aria-hidden="true"></div>
+        <div class="why-web__pillar-num" aria-hidden="true">01</div>
+        <h3 class="why-web__pillar-title">Credibilidad inmediata</h3>
+        <p class="why-web__pillar-body">
+          Desde emprendimientos que arrancan hasta empresas consolidadas, todos logran autoridad instantánea
+          al tener su propio sitio. Quien invierte en su marca genera más confianza que quien solo tiene Instagram.
+        </p>
+      </div>
+
+      <div class="why-web__pillar reveal delay-2">
+        <div class="why-web__pillar-line" aria-hidden="true"></div>
+        <div class="why-web__pillar-num" aria-hidden="true">02</div>
+        <h3 class="why-web__pillar-title">Presencia 24/7</h3>
+        <p class="why-web__pillar-body">
+          Mientras dormís, tu sitio trabaja. Clientes de todo el país y del mundo pueden conocer tus servicios,
+          ver precios y contactarte en cualquier momento sin que vos tengas que hacer nada.
+        </p>
+      </div>
+
+      <div class="why-web__pillar reveal delay-3">
+        <div class="why-web__pillar-line" aria-hidden="true"></div>
+        <div class="why-web__pillar-num" aria-hidden="true">03</div>
+        <h3 class="why-web__pillar-title">Convertí visitas en ventas</h3>
+        <p class="why-web__pillar-body">
+          Si sentís que tu empresa puede llegar a más, una web convierte visitantes en clientes reales,
+          mostrando todos tus productos y servicios de forma profesional y ordenada.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Comparativa -->
+    <div class="why-web__compare-wrap reveal">
+
+      <div class="why-web__compare-header">
+        <span class="label">Comparativa</span>
+        <h3 class="heading-md why-web__compare-title">¿Cómo te ve tu cliente?</h3>
+        <p class="body-md why-web__compare-sub">
+          La ventaja real de tener tu catálogo web propio frente a depender solo de redes sociales.
+        </p>
+      </div>
+
+      <div class="compare-table" role="table" aria-label="Comparativa Solo Instagram vs Catálogo Web">
+
+        <div class="compare-table__head" role="row">
+          <div class="compare-table__cell compare-table__cell--label" role="columnheader">Situación</div>
+          <div class="compare-table__cell compare-table__cell--bad" role="columnheader">
+            <span class="compare-table__badge compare-table__badge--bad">Solo Instagram</span>
+          </div>
+          <div class="compare-table__cell compare-table__cell--good" role="columnheader">
+            <span class="compare-table__badge compare-table__badge--good">Con tu web — Eón Solves</span>
+          </div>
+        </div>
+
+        <div class="compare-table__row" role="row">
+          <div class="compare-table__cell compare-table__cell--label" role="cell"><span class="compare-table__aspect">Atención</span></div>
+          <div class="compare-table__cell compare-table__cell--bad" role="cell">
+            <span class="compare-table__icon compare-table__icon--bad" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></span>
+            Respondés "precio al DM" o mandás fotos una por una
+          </div>
+          <div class="compare-table__cell compare-table__cell--good" role="cell">
+            <span class="compare-table__icon compare-table__icon--good" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span>
+            El cliente navega, ve precios y te escribe solo para cerrar
+          </div>
+        </div>
+
+        <div class="compare-table__row" role="row">
+          <div class="compare-table__cell compare-table__cell--label" role="cell"><span class="compare-table__aspect">Organización</span></div>
+          <div class="compare-table__cell compare-table__cell--bad" role="cell">
+            <span class="compare-table__icon compare-table__icon--bad" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></span>
+            Tus productos se pierden en el feed entre fotos viejas
+          </div>
+          <div class="compare-table__cell compare-table__cell--good" role="cell">
+            <span class="compare-table__icon compare-table__icon--good" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span>
+            Filtros avanzados; encuentran lo que buscan en segundos
+          </div>
+        </div>
+
+        <div class="compare-table__row" role="row">
+          <div class="compare-table__cell compare-table__cell--label" role="cell"><span class="compare-table__aspect">Confianza</span></div>
+          <div class="compare-table__cell compare-table__cell--bad" role="cell">
+            <span class="compare-table__icon compare-table__icon--bad" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></span>
+            El cliente duda de la seriedad sin plataforma formal
+          </div>
+          <div class="compare-table__cell compare-table__cell--good" role="cell">
+            <span class="compare-table__icon compare-table__icon--good" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span>
+            Imagen sólida que transmite empresa seria y establecida
+          </div>
+        </div>
+
+        <div class="compare-table__row" role="row">
+          <div class="compare-table__cell compare-table__cell--label" role="cell"><span class="compare-table__aspect">Alcance</span></div>
+          <div class="compare-table__cell compare-table__cell--bad" role="cell">
+            <span class="compare-table__icon compare-table__icon--bad" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></span>
+            Solo tus seguidores o lo que el algoritmo decide mostrar
+          </div>
+          <div class="compare-table__cell compare-table__cell--good" role="cell">
+            <span class="compare-table__icon compare-table__icon--good" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span>
+            Todo Paraguay y el mundo, disponible las 24 horas
+          </div>
+        </div>
+
+        <div class="compare-table__row" role="row">
+          <div class="compare-table__cell compare-table__cell--label" role="cell"><span class="compare-table__aspect">Ventas</span></div>
+          <div class="compare-table__cell compare-table__cell--bad" role="cell">
+            <span class="compare-table__icon compare-table__icon--bad" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6 6 18M6 6l12 12"/></svg></span>
+            Consulta larga; muchos clientes abandonan antes de escribirte
+          </div>
+          <div class="compare-table__cell compare-table__cell--good" role="cell">
+            <span class="compare-table__icon compare-table__icon--good" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg></span>
+            Botón WhatsApp en cada producto; pedido listo para facturar
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
     <!-- ═══════════════════════════════
        SERVICIOS PREVIEW (dark)
   ═══════════════════════════════ -->
-    <section class="section section--dark section-pad" id="servicios-preview" aria-labelledby="sv-title">
+    <!--   <section class="section section--dark section-pad" id="servicios-preview" aria-labelledby="sv-title">
       <div class="container">
 
         <div class="section-header reveal">
@@ -311,8 +479,110 @@
         </div>
 
       </div>
-    </section>
+    </section> -->
 
+
+    <section class="section section--dark section-pad" id="servicios-preview" aria-labelledby="sv-title">
+      <div class="container">
+
+        <div class="section-header reveal">
+          <span class="label">Lo que hacemos</span>
+          <span class="label-sep"></span>
+          <h2 class="heading-lg" id="sv-title">Soluciones Digitales</h2>
+          <p class="body-md section-sub"
+            style="max-width:480px; color: var(--text-on-dark-secondary); margin-top: var(--sp-4);">
+            Construimos presencia, sistemas y plataformas digitales con enfoque estratégico y escalable.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <!-- 01 -->
+          <article class="card reveal delay-1">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M3 9h18M9 21V9" />
+              </svg>
+            </div>
+            <h3 class="card__title">Software a Medida</h3>
+            <p class="card__body">
+              Sistemas personalizados, paneles administrativos y plataformas diseñadas según las necesidades reales de
+              tu negocio.
+            </p>
+
+            <div class="card__price">Escalable & Personalizado</div>
+            <div class="card__footer">
+              Ideal para empresas que necesitan automatizar procesos o gestionar productos, clientes o propiedades.
+            </div>
+          </article>
+
+          <!-- 02 -->
+          <article class="card reveal delay-2">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" />
+                <polyline points="13 2 13 9 20 9" />
+              </svg>
+            </div>
+            <h3 class="card__title">Branding & Presencia Digital</h3>
+            <p class="card__body">
+              Construimos identidad visual sólida y una presencia digital coherente que transmita profesionalismo y
+              confianza.
+            </p>
+
+            <div class="card__price">Imagen que genera confianza</div>
+            <div class="card__footer">
+              Para marcas nuevas o empresas que necesitan renovar su posicionamiento digital.
+            </div>
+          </article>
+
+          <!-- 03 -->
+          <article class="card reveal delay-3">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z" />
+                <line x1="3" y1="6" x2="21" y2="6" />
+                <path d="M16 10a4 4 0 0 1-8 0" />
+              </svg>
+            </div>
+            <h3 class="card__title">Landing & Conversión</h3>
+            <p class="card__body">
+              Páginas optimizadas para captar clientes y generar resultados medibles en campañas y lanzamientos.
+            </p>
+
+            <div class="card__price">Enfocado en resultados</div>
+            <div class="card__footer">
+              Perfecto para campañas, lanzamientos o negocios que buscan captar clientes rápidamente.
+            </div>
+          </article>
+
+          <!-- 04 -->
+          <article class="card reveal delay-4">
+            <div class="card__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+              </svg>
+            </div>
+            <h3 class="card__title">Catálogos & Sistemas Web</h3>
+            <p class="card__body">
+              Plataformas con filtros avanzados, gestión de productos o inmuebles y contacto directo por WhatsApp.
+            </p>
+
+            <div class="card__price">Gestión dinámica</div>
+            <div class="card__footer">
+              Ideal para inmobiliarias, tiendas o negocios con inventario en constante actualización.
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
     <!-- ═══════════════════════════════
        POR QUÉ ELEGIRNOS (light)
   ═══════════════════════════════ -->
@@ -398,92 +668,10 @@
             </div>
           </div>
 
+        </div>
       </div>
-    </div>
-  </section>
-  <section class="section section--dark section-pad" id="servicios-preview" aria-labelledby="sv-title">
-    <div class="container">
-  
-      <div class="section-header reveal">
-        <span class="label">Lo que hacemos</span>
-        <span class="label-sep"></span>
-        <h2 class="heading-lg" id="sv-title">Soluciones Digitales</h2>
-        <p class="body-md section-sub" style="max-width:480px; color: var(--text-on-dark-secondary); margin-top: var(--sp-4);">
-          Construimos presencia, sistemas y plataformas digitales con enfoque estratégico y escalable.
-        </p>
-      </div>
-  
-      <div class="services-grid">
-  
-        <!-- 01 -->
-        <article class="card reveal delay-1">
-          <div class="card__icon">
-            <i class="ph ph-code"></i>
-          </div>
-          <h3 class="card__title">Software a Medida</h3>
-          <p class="card__body">
-            Sistemas personalizados, paneles administrativos y plataformas diseñadas según las necesidades reales de tu negocio.
-          </p>
-  
-          <div class="card__price">Escalable & Personalizado</div>
-          <div class="card__footer">
-            Ideal para empresas que necesitan automatizar procesos o gestionar productos, clientes o propiedades.
-          </div>
-        </article>
-  
-        <!-- 02 -->
-        <article class="card reveal delay-2">
-          <div class="card__icon">
-            <i class="ph ph-pen-nib"></i>
-          </div>
-          <h3 class="card__title">Branding & Presencia Digital</h3>
-          <p class="card__body">
-            Construimos identidad visual sólida y una presencia digital coherente que transmita profesionalismo y confianza.
-          </p>
-  
-          <div class="card__price">Imagen que genera confianza</div>
-          <div class="card__footer">
-            Para marcas nuevas o empresas que necesitan renovar su posicionamiento digital.
-          </div>
-        </article>
-  
-        <!-- 03 -->
-        <article class="card reveal delay-3">
-          <div class="card__icon">
-            <i class="ph ph-rocket-launch"></i>
-          </div>
-          <h3 class="card__title">Landing & Conversión</h3>
-          <p class="card__body">
-            Páginas optimizadas para captar clientes y generar resultados medibles en campañas y lanzamientos.
-          </p>
-  
-          <div class="card__price">Enfocado en resultados</div>
-          <div class="card__footer">
-            Perfecto para campañas, lanzamientos o negocios que buscan captar clientes rápidamente.
-          </div>
-        </article>
-  
-        <!-- 04 -->
-        <article class="card reveal delay-4">
-          <div class="card__icon">
-            <i class="ph ph-buildings"></i>
-          </div>
-          <h3 class="card__title">Catálogos & Sistemas Web</h3>
-          <p class="card__body">
-            Plataformas con filtros avanzados, gestión de productos o inmuebles y contacto directo por WhatsApp.
-          </p>
-  
-          <div class="card__price">Gestión dinámica</div>
-          <div class="card__footer">
-            Ideal para inmobiliarias, tiendas o negocios con inventario en constante actualización.
-          </div>
-        </article>
-  
-      </div>
-  
-    </div>
-  </section>
-  <!-- ═══════════════════════════════
+    </section>
+    <!-- ═══════════════════════════════
        PROCESO (dark)
   ═══════════════════════════════ -->
     <section class="section section--dark section-pad" id="proceso" aria-labelledby="proc-title">
@@ -809,39 +997,137 @@
 
         window.open(url, "_blank");
       });
-  });
+    });
 
+    document.addEventListener('DOMContentLoaded', () => {
 
-  //Animacio de estrella
-  document.addEventListener('DOMContentLoaded', () => {
-    const hero = document.getElementById('inicio'); // Asegúrate de que tu sección hero tenga este ID
-    const numEstrellas = 12; // Cantidad de estrellas decorativas
+      const hero = document.getElementById('inicio');
+      const targetSection = hero || document.querySelector('.page-hero');
+      if (!targetSection) return;
 
-    for (let i = 0; i < numEstrellas; i++) {
-        const estrella = document.createElement('div');
-        estrella.className = 'hero__star-decorative';
-        
-        // Posiciones aleatorias para que parezca un cielo natural
-        const posX = Math.floor(Math.random() * 90) + 5; // Entre 5% y 95%
-        const posY = Math.floor(Math.random() * 70) + 10; // Entre 10% y 80%
-        
-        // Tamaños variados para dar profundidad
-        const size = (Math.random() * 3 + 2) + 'px'; 
-        
-        // Retraso aleatorio para que el parpadeo sea asíncrono
-        const delay = (Math.random() * 5) + 's';
-        const duration = (Math.random() * 3 + 2) + 's';
+      // ─────────────────────────────────────────────
+      // 1. CANVAS DE ESTRELLAS — fondo espacial real
+      // ─────────────────────────────────────────────
+      const canvas = document.createElement('canvas');
+      canvas.id = 'space-canvas';
+      targetSection.prepend(canvas);
 
-        estrella.style.left = `${posX}%`;
-        estrella.style.top = `${posY}%`;
-        estrella.style.width = size;
-        estrella.style.height = size;
-        estrella.style.animationDelay = delay;
-        estrella.style.animationDuration = duration;
+      const ctx = canvas.getContext('2d');
 
-        hero.appendChild(estrella);
-    }
-  });
+      function resizeCanvas() {
+        canvas.width = targetSection.offsetWidth;
+        canvas.height = targetSection.offsetHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', () => { resizeCanvas(); drawStars(); });
+
+      // Generamos estrellas en 3 capas de profundidad
+      const starLayers = [
+        { count: 180, minR: 0.2, maxR: 0.6, alpha: 0.4, twinkleSpeed: 0.008 }, // lejanas
+        { count: 80, minR: 0.5, maxR: 1.0, alpha: 0.65, twinkleSpeed: 0.012 }, // medias
+        { count: 30, minR: 0.8, maxR: 1.6, alpha: 0.9, twinkleSpeed: 0.018 }, // cercanas
+      ];
+
+      const stars = [];
+
+      starLayers.forEach(layer => {
+        for (let i = 0; i < layer.count; i++) {
+          const r = Math.random() * (layer.maxR - layer.minR) + layer.minR;
+          stars.push({
+            x: Math.random(),  // 0–1 normalizado
+            y: Math.random(),
+            r,
+            baseAlpha: layer.alpha * (0.6 + Math.random() * 0.4),
+            alpha: 0,
+            twinkleOffset: Math.random() * Math.PI * 2,
+            twinkleSpeed: layer.twinkleSpeed * (0.7 + Math.random() * 0.6),
+            // Algunas estrellas tienen tinte neón muy sutil
+            neon: Math.random() < 0.08,
+          });
+        }
+      });
+
+      let frame = 0;
+
+      function drawStars() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+        stars.forEach(s => {
+          const tw = Math.sin(s.twinkleOffset + frame * s.twinkleSpeed);
+          const alpha = s.baseAlpha * (0.6 + tw * 0.4);
+
+          ctx.beginPath();
+          ctx.arc(s.x * canvas.width, s.y * canvas.height, s.r, 0, Math.PI * 2);
+
+          if (s.neon) {
+            // Brillo neón (cfd74a)
+            ctx.fillStyle = `rgba(207, 237, 74, ${alpha * 0.8})`;
+            ctx.shadowBlur = 6;
+            ctx.shadowColor = 'rgba(207, 237, 74, 0.6)';
+          } else {
+            ctx.fillStyle = `rgba(255, 255, 255, ${alpha})`;
+            ctx.shadowBlur = s.r > 1.2 ? 8 : 0;
+            ctx.shadowColor = 'rgba(255, 255, 255, 0.8)';
+          }
+
+          ctx.fill();
+          ctx.shadowBlur = 0;
+        });
+
+        // Algunas estrellas grandes con cruz de difracción (estilo telescopio)
+        stars.filter(s => s.r > 1.3).forEach(s => {
+          const tw = Math.sin(s.twinkleOffset + frame * s.twinkleSpeed * 0.5);
+          const alpha = (0.15 + tw * 0.1) * s.baseAlpha;
+          const cx = s.x * canvas.width;
+          const cy = s.y * canvas.height;
+          const len = s.r * 10;
+
+          ctx.strokeStyle = `rgba(255, 255, 255, ${alpha})`;
+          ctx.lineWidth = 0.5;
+
+          // Cruz horizontal
+          const gH = ctx.createLinearGradient(cx - len, cy, cx + len, cy);
+          gH.addColorStop(0, 'transparent');
+          gH.addColorStop(0.5, `rgba(255,255,255,${alpha})`);
+          gH.addColorStop(1, 'transparent');
+          ctx.strokeStyle = gH;
+          ctx.beginPath(); ctx.moveTo(cx - len, cy); ctx.lineTo(cx + len, cy); ctx.stroke();
+
+          // Cruz vertical
+          const gV = ctx.createLinearGradient(cx, cy - len, cx, cy + len);
+          gV.addColorStop(0, 'transparent');
+          gV.addColorStop(0.5, `rgba(255,255,255,${alpha})`);
+          gV.addColorStop(1, 'transparent');
+          ctx.strokeStyle = gV;
+          ctx.beginPath(); ctx.moveTo(cx, cy - len); ctx.lineTo(cx, cy + len); ctx.stroke();
+        });
+
+        frame++;
+        requestAnimationFrame(drawStars);
+      }
+
+      drawStars();
+      // ─────────────────────────────────────────────
+      // 3. POLVO ESTELAR — partículas flotantes neón
+      // ─────────────────────────────────────────────
+      const DUST_COUNT = 25;
+      for (let i = 0; i < DUST_COUNT; i++) {
+        const dust = document.createElement('div');
+        dust.className = 'stardust';
+        Object.assign(dust.style, {
+          left: `${Math.random() * 98}%`,
+          top: `${Math.random() * 90}%`,
+          animationDelay: `${Math.random() * 8}s`,
+          animationDuration: `${3 + Math.random() * 5}s`,
+          width: `${Math.random() < 0.3 ? 2 : 1}px`,
+          height: `${Math.random() < 0.3 ? 2 : 1}px`,
+        });
+        targetSection.appendChild(dust);
+      }
+
+      console.log("🚀 Espacio exterior activado");
+    });
+
   </script>
 
 </body>
