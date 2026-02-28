@@ -1,5 +1,5 @@
 /* ============================================================
-   NAV.JS — EÓN SOLUTIONS
+   NAV.JS — EÓN Solves
    Lógica compartida de navegación y scroll reveal
    ============================================================ */
 
