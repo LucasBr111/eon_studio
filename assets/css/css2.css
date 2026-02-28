@@ -408,6 +408,9 @@
   max-width: 640px;
   margin: 0 auto var(--sp-14);
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .why-web__lead {
@@ -423,6 +426,7 @@
 .why-web__desc {
   color: var(--text-on-light-secondary);
   line-height: var(--leading-relaxed);
+  text-align: center
 }
 
 /* Truco visual: texto con color acento sin italic */

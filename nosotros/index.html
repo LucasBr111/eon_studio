@@ -55,6 +55,63 @@
       <span class="nav__burger-bar"></span>
     </button>
   </div>
+
+
+
+
+  <style>
+    .grid-2-cols {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--sp-12);
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .grid-2-cols { grid-template-columns: 1fr; gap: var(--sp-6); }
+}
+
+/* Metodología Cards */
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--sp-6);
+}
+
+.method-card {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: var(--sp-8);
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+}
+
+.method-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent); /* Asegúrate de tener esta variable */
+}
+
+.method-num {
+    font-family: 'Michroma', sans-serif;
+    font-size: 0.9rem;
+    color: var(--accent);
+    margin-bottom: var(--sp-4);
+    display: block;
+}
+
+.method-card h3 {
+    margin-bottom: var(--sp-3);
+    font-size: 1.25rem;
+}
+
+
+/* Utility: Gradient Text */
+.text-gradient {
+    background: linear-gradient(90deg, #fff, var(--accent));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+  </style>
 </header>
 
 <div class="nav__modal" id="nav-modal" aria-hidden="true">
@@ -117,24 +174,33 @@
           </p>
         </div>
 
-        <div class="about-intro__stats" aria-label="Números del studio">
-          <div class="about-stat reveal delay-1">
-            <span class="about-stat__num">+30</span>
-            <span class="about-stat__label">Proyectos entregados</span>
-          </div>
-          <div class="about-stat reveal delay-2">
-            <span class="about-stat__num">2</span>
-            <span class="about-stat__label">Años de experiencia</span>
-          </div>
-          <div class="about-stat reveal delay-3">
-            <span class="about-stat__num">100%</span>
-            <span class="about-stat__label">Clientes satisfechos</span>
-          </div>
-          <div class="about-stat reveal delay-4">
-            <span class="about-stat__num">24h</span>
-            <span class="about-stat__label">Tiempo de respuesta</span>
-          </div>
-        </div>
+       <div class="about-intro__stats" aria-label="Métricas de rendimiento de Eón Solves">
+  
+  <div class="about-stat reveal delay-1">
+    <span class="about-stat__num">99.9%</span>
+    <span class="about-stat__label">Uptime Garantizado</span>
+    <small class="stat-detail">Tu web siempre en línea</small>
+  </div>
+
+  <div class="about-stat reveal delay-2">
+    <span class="about-stat__num">&lt;2s</span>
+    <span class="about-stat__label">Carga Ultra Rápida</span>
+    <small class="stat-detail">Optimización Core Web Vitals</small>
+  </div>
+
+  <div class="about-stat reveal delay-3">
+    <span class="about-stat__num">100%</span>
+    <span class="about-stat__label">Diseño Responsivo</span>
+    <small class="stat-detail">Perfecto en PC y Celulares</small>
+  </div>
+
+  <div class="about-stat reveal delay-4">
+    <span class="about-stat__num">24h</span>
+    <span class="about-stat__label">Soporte Prioritario</span>
+    <small class="stat-detail">Respuesta local inmediata</small>
+  </div>
+
+</div>
 
       </div>
     </div>
@@ -256,7 +322,7 @@
   <!-- ═══════════════════════════════
        EQUIPO (dark)
   ═══════════════════════════════ -->
-  <section class="section section--dark section-pad" id="equipo" aria-labelledby="equipo-title">
+  <!-- <section class="section section--dark section-pad" id="equipo" aria-labelledby="equipo-title">
     <div class="container">
 
       <div style="margin-bottom: var(--sp-16);">
@@ -270,10 +336,11 @@
 
       <ul class="team-grid" aria-label="Integrantes del equipo">
 
-        <!-- TODO: completar con datos reales del equipo -->
+        
+        >
         <li class="team-card reveal">
           <div class="team-card__photo" aria-hidden="true">
-            <!-- <img src="assets/img/team/nombre.jpg" alt="Nombre Apellido" /> -->
+            
             <div class="team-card__photo-placeholder">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
             </div>
@@ -281,7 +348,7 @@
           <div class="team-card__info">
             <h3 class="team-card__name">Tu nombre aquí</h3>
             <p class="team-card__role">Desarrollador / Co-fundador</p>
-            <p class="team-card__bio"><!-- TODO: mini bio 1-2 líneas --></p>
+            <p class="team-card__bio"></p>
             <div class="team-card__links">
               <a href="#" class="btn-icon" aria-label="LinkedIn">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
@@ -299,7 +366,7 @@
           <div class="team-card__info">
             <h3 class="team-card__name">Tu nombre aquí</h3>
             <p class="team-card__role">Diseñadora / Co-fundadora</p>
-            <p class="team-card__bio"><!-- TODO: mini bio 1-2 líneas --></p>
+            <p class="team-card__bio"></p>
             <div class="team-card__links">
               <a href="#" class="btn-icon" aria-label="LinkedIn">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
@@ -311,81 +378,127 @@
       </ul>
 
     </div>
+  </section> -->
+
+  <section class="page-hero section section--dark">
+    <div class="container">
+      <div class="page-hero__tag"><span class="badge">Eón Solves Studio</span></div>
+      <h1 class="heading-xl reveal">Potenciando el comercio<br><span class="text-gradient">de la Región</span></h1>
+      <p class="body-lg reveal delay-1">No somos solo programadores. Somos el socio tecnológico que ayuda a los negocios de Ciudad del Este a proyectar la calidad que ya tienen en el mundo físico.</p>
+    </div>
   </section>
+
+<!-- 
+  <section class="section section--dark section-pad">
+    <div class="container">
+      <div style="text-align: center; margin-bottom: 4rem;">
+        <span class="label">Nuestro Proceso</span>
+        <h2 class="heading-md">Cómo trabajamos</h2>
+      </div>
+      <div class="method-grid">
+        <div class="method-card reveal">
+          <div class="method-num">01</div>
+          <h3>Diagnóstico Digital</h3>
+          <p>Analizamos tu rubro y qué está haciendo tu competencia para superarlos.</p>
+        </div>
+        <div class="method-card reveal delay-1">
+          <div class="method-num">02</div>
+          <h3>Diseño de Interfaz</h3>
+          <p>Creamos una estética moderna que genere confianza inmediata en el cliente.</p>
+        </div>
+        <div class="method-card reveal delay-2">
+          <div class="method-num">03</div>
+          <h3>Desarrollo High-End</h3>
+          <p>Webs que cargan en menos de 2 segundos y se ven perfectas en celulares.</p>
+        </div>
+        <div class="method-card reveal delay-3">
+          <div class="method-num">04</div>
+          <h3>Soporte Eón</h3>
+          <p>No te dejamos solo. Incluimos monitoreo y actualizaciones constantes.</p>
+        </div>
+      </div>
+    </div>
+  </section> -->
 
   <!-- ═══════════════════════════════
        TECNOLOGÍAS (light)
   ═══════════════════════════════ -->
-  <section class="section section--light section-pad" id="tecnologias" aria-labelledby="tech-title">
+<section class="section section--light section-pad" id="tecnologias" aria-labelledby="tech-title">
     <div class="container">
 
       <div class="tech-layout">
 
         <div>
-          <span class="label reveal">Stack técnico</span>
+          <span class="label reveal">Stack profesional</span>
           <span class="label-sep reveal"></span>
-          <h2 class="heading-lg reveal" id="tech-title">Herramientas<br>que usamos</h2>
+          <h2 class="heading-lg reveal" id="tech-title">Potencia y<br>Escalabilidad</h2>
           <p class="body-md reveal delay-1" style="max-width: 380px; color: var(--text-on-light-secondary); margin-top: var(--sp-5);">
-            Elegimos la tecnología según cada proyecto. Sin atarnos a una sola solución, siempre priorizando rendimiento y mantenibilidad.
+            No usamos soluciones limitadas. Construimos catálogos y sistemas a medida utilizando tecnologías de back-end robustas que crecen con tu negocio.
           </p>
         </div>
 
         <ul class="tech-list" aria-label="Tecnologías utilizadas">
-          <!-- TODO: ajustar según stack real -->
+          
           <li class="tech-item reveal delay-1">
+            <div class="tech-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <div>
+              <div class="tech-item__name">Laravel & PHP</div>
+              <div class="tech-item__desc">El framework más potente para sistemas complejos y catálogos de alto rendimiento.</div>
+            </div>
+          </li>
+
+          <li class="tech-item reveal delay-2">
+            <div class="tech-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+            </div>
+            <div>
+              <div class="tech-item__name">MySQL & Bases de Datos</div>
+              <div class="tech-item__desc">Gestión profesional de inventarios, productos y datos de clientes de forma segura.</div>
+            </div>
+          </li>
+
+          <li class="tech-item reveal delay-3">
             <div class="tech-item__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
             <div>
               <div class="tech-item__name">HTML5 / CSS3 / JS</div>
-              <div class="tech-item__desc">Base de todo. Sin dependencias innecesarias.</div>
+              <div class="tech-item__desc">Interfaces puras, rápidas y totalmente personalizadas sin depender de plantillas.</div>
             </div>
           </li>
-          <li class="tech-item reveal delay-2">
-            <div class="tech-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
-            </div>
-            <div>
-              <div class="tech-item__name">React / Next.js</div>
-              <div class="tech-item__desc">Para proyectos que requieren dinamismo y escalabilidad.</div>
-            </div>
-          </li>
-          <li class="tech-item reveal delay-3">
-            <div class="tech-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="2"/></svg>
-            </div>
-            <div>
-              <div class="tech-item__name">WordPress / CMS</div>
-              <div class="tech-item__desc">Cuando el cliente necesita gestionar su propio contenido.</div>
-            </div>
-          </li>
+
           <li class="tech-item reveal delay-4">
             <div class="tech-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.19 12 19.79 19.79 0 0 1 1.14 3.4 2 2 0 0 1 3.12 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.4A16 16 0 0 0 15.6 16.1l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 23.73 17"/></svg>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
             </div>
             <div>
-              <div class="tech-item__name">Integración WhatsApp API</div>
-              <div class="tech-item__desc">Botones y flujos directos al canal más usado del cliente.</div>
+              <div class="tech-item__name">Infraestructura Hostinger</div>
+              <div class="tech-item__desc">Servidores optimizados para velocidad en la región con certificados SSL incluidos.</div>
             </div>
           </li>
+
           <li class="tech-item reveal delay-5">
-            <div class="tech-item__icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
-            </div>
-            <div>
-              <div class="tech-item__name">SEO On-Page</div>
-              <div class="tech-item__desc">Meta tags, estructura semántica, velocidad y Open Graph en cada proyecto.</div>
-            </div>
-          </li>
-          <li class="tech-item reveal delay-6">
             <div class="tech-item__icon" aria-hidden="true">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <div>
-              <div class="tech-item__name">Hosting + SSL + Backups</div>
-              <div class="tech-item__desc">Infraestructura robusta para que tu sitio nunca se caiga.</div>
+              <div class="tech-item__name">Backups & Seguridad</div>
+              <div class="tech-item__desc">Copias de seguridad automáticas y protección de datos para tu tranquilidad.</div>
             </div>
           </li>
+
+          <li class="tech-item reveal delay-6">
+            <div class="tech-item__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.19 12 19.79 19.79 0 0 1 1.14 3.4 2 2 0 0 1 3.12 1.22h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.4A16 16 0 0 0 15.6 16.1l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 23.73 17"/></svg>
+            </div>
+            <div>
+              <div class="tech-item__name">Conversión vía WhatsApp</div>
+              <div class="tech-item__desc">Catálogos sincronizados para recibir pedidos directamente en tu chat.</div>
+            </div>
+          </li>
+
         </ul>
 
       </div>
