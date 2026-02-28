@@ -183,28 +183,37 @@
 }
 
 /* Scroll indicator */
-.hero__scroll {
+/* Estrellas decorativas extras */
+.hero__star-decorative {
   position: absolute;
-  bottom: var(--sp-8);
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: rgb(207, 237, 74);
+  border-radius: 50%;
+  pointer-events: none; /* Para que no interfieran con clicks en botones */
+  z-index: 1;
+  opacity: 0;
+  box-shadow: 0 0 10px var(--accent, #6247AA);
+  animation: starBlink 4s ease-in-out infinite;
 }
 
-.hero__scroll-line {
-  width: 1px;
-  height: 48px;
-  background: linear-gradient(to bottom, var(--accent), transparent);
-  animation: scrollLine 2s ease-in-out infinite;
+/* Reutilizamos o definimos la animación de parpadeo */
+@keyframes starBlink {
+  0%, 100% {
+      transform: scale(0.5);
+      opacity: 0.1;
+      filter: blur(1px);
+  }
+  50% {
+      transform: scale(1.2);
+      opacity: 0.8;
+      filter: blur(0px);
+      box-shadow: 0 0 15px var(--accent, #6247AA);
+  }
 }
 
-@keyframes scrollLine {
-  0%   { transform: scaleY(0); transform-origin: top; }
-  50%  { transform: scaleY(1); transform-origin: top; }
-  51%  { transform: scaleY(1); transform-origin: bottom; }
-  100% { transform: scaleY(0); transform-origin: bottom; }
+/* Asegúrate de que el Hero tenga posición relativa para contener las estrellas */
+#inicio {
+  position: relative;
+  overflow: hidden; /* Evita que las estrellas que queden muy al borde creen scroll */
 }
 
 

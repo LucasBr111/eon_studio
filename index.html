@@ -162,7 +162,7 @@
 
           <div class="hero__actions reveal delay-3">
             <a href="#contacto" class="btn btn--primary">Solicitar presupuesto</a>
-            <a href="servicios.html" class="btn btn--ghost">Ver servicios
+            <a href="servicios/index.html" class="btn btn--ghost">Ver servicios
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="14" height="14">
                 <path d="M5 12h14M12 5l7 7-7 7" />
               </svg>
@@ -206,9 +206,9 @@
           </div>
         </div>
       </div>
-
       <!-- Scroll indicator -->
       <div class="hero__scroll" aria-hidden="true">
+      <div class="hero__scroll-star"></div>
         <span class="hero__scroll-line"></span>
       </div>
     </section>
@@ -398,11 +398,92 @@
             </div>
           </div>
 
-        </div>
       </div>
-    </section>
-
-    <!-- ═══════════════════════════════
+    </div>
+  </section>
+  <section class="section section--dark section-pad" id="servicios-preview" aria-labelledby="sv-title">
+    <div class="container">
+  
+      <div class="section-header reveal">
+        <span class="label">Lo que hacemos</span>
+        <span class="label-sep"></span>
+        <h2 class="heading-lg" id="sv-title">Soluciones Digitales</h2>
+        <p class="body-md section-sub" style="max-width:480px; color: var(--text-on-dark-secondary); margin-top: var(--sp-4);">
+          Construimos presencia, sistemas y plataformas digitales con enfoque estratégico y escalable.
+        </p>
+      </div>
+  
+      <div class="services-grid">
+  
+        <!-- 01 -->
+        <article class="card reveal delay-1">
+          <div class="card__icon">
+            <i class="ph ph-code"></i>
+          </div>
+          <h3 class="card__title">Software a Medida</h3>
+          <p class="card__body">
+            Sistemas personalizados, paneles administrativos y plataformas diseñadas según las necesidades reales de tu negocio.
+          </p>
+  
+          <div class="card__price">Escalable & Personalizado</div>
+          <div class="card__footer">
+            Ideal para empresas que necesitan automatizar procesos o gestionar productos, clientes o propiedades.
+          </div>
+        </article>
+  
+        <!-- 02 -->
+        <article class="card reveal delay-2">
+          <div class="card__icon">
+            <i class="ph ph-pen-nib"></i>
+          </div>
+          <h3 class="card__title">Branding & Presencia Digital</h3>
+          <p class="card__body">
+            Construimos identidad visual sólida y una presencia digital coherente que transmita profesionalismo y confianza.
+          </p>
+  
+          <div class="card__price">Imagen que genera confianza</div>
+          <div class="card__footer">
+            Para marcas nuevas o empresas que necesitan renovar su posicionamiento digital.
+          </div>
+        </article>
+  
+        <!-- 03 -->
+        <article class="card reveal delay-3">
+          <div class="card__icon">
+            <i class="ph ph-rocket-launch"></i>
+          </div>
+          <h3 class="card__title">Landing & Conversión</h3>
+          <p class="card__body">
+            Páginas optimizadas para captar clientes y generar resultados medibles en campañas y lanzamientos.
+          </p>
+  
+          <div class="card__price">Enfocado en resultados</div>
+          <div class="card__footer">
+            Perfecto para campañas, lanzamientos o negocios que buscan captar clientes rápidamente.
+          </div>
+        </article>
+  
+        <!-- 04 -->
+        <article class="card reveal delay-4">
+          <div class="card__icon">
+            <i class="ph ph-buildings"></i>
+          </div>
+          <h3 class="card__title">Catálogos & Sistemas Web</h3>
+          <p class="card__body">
+            Plataformas con filtros avanzados, gestión de productos o inmuebles y contacto directo por WhatsApp.
+          </p>
+  
+          <div class="card__price">Gestión dinámica</div>
+          <div class="card__footer">
+            Ideal para inmobiliarias, tiendas o negocios con inventario en constante actualización.
+          </div>
+        </article>
+  
+      </div>
+  
+    </div>
+  </section>
+  <!-- ═══════════════════════════════
        PROCESO (dark)
   ═══════════════════════════════ -->
     <section class="section section--dark section-pad" id="proceso" aria-labelledby="proc-title">
@@ -728,7 +809,39 @@
 
         window.open(url, "_blank");
       });
-    });
+  });
+
+
+  //Animacio de estrella
+  document.addEventListener('DOMContentLoaded', () => {
+    const hero = document.getElementById('inicio'); // Asegúrate de que tu sección hero tenga este ID
+    const numEstrellas = 12; // Cantidad de estrellas decorativas
+
+    for (let i = 0; i < numEstrellas; i++) {
+        const estrella = document.createElement('div');
+        estrella.className = 'hero__star-decorative';
+        
+        // Posiciones aleatorias para que parezca un cielo natural
+        const posX = Math.floor(Math.random() * 90) + 5; // Entre 5% y 95%
+        const posY = Math.floor(Math.random() * 70) + 10; // Entre 10% y 80%
+        
+        // Tamaños variados para dar profundidad
+        const size = (Math.random() * 3 + 2) + 'px'; 
+        
+        // Retraso aleatorio para que el parpadeo sea asíncrono
+        const delay = (Math.random() * 5) + 's';
+        const duration = (Math.random() * 3 + 2) + 's';
+
+        estrella.style.left = `${posX}%`;
+        estrella.style.top = `${posY}%`;
+        estrella.style.width = size;
+        estrella.style.height = size;
+        estrella.style.animationDelay = delay;
+        estrella.style.animationDuration = duration;
+
+        hero.appendChild(estrella);
+    }
+  });
   </script>
 
 </body>
