@@ -3,6 +3,7 @@
    Estilos específicos de la página Studio
    ============================================================ */
 
+
 /* ════════════════════════════════
    INTRO
 ════════════════════════════════ */
@@ -14,7 +15,6 @@
   align-items: start;
 }
 
-.about-intro__text {}
 .about-intro__text p + p { margin-top: var(--sp-5); }
 
 .about-intro__stats {
@@ -52,6 +52,17 @@
   letter-spacing: var(--tracking-wide);
   text-transform: uppercase;
   color: var(--text-on-light-muted);
+  display: block;
+  margin-bottom: var(--sp-1);
+}
+
+/* stat-detail es el small que se agregó en el HTML */
+.stat-detail {
+  font-size: var(--text-xs);
+  color: var(--text-on-light-muted);
+  opacity: 0.7;
+  margin-top: var(--sp-1);
+  display: block;
 }
 
 
@@ -121,6 +132,132 @@
 
 
 /* ════════════════════════════════
+   METODOLOGÍA (grid-2-cols)
+   Antes eran estilos inline en <style> dentro del <header>
+════════════════════════════════ */
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-12);
+  align-items: center;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--sp-6);
+}
+
+.method-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--sp-8);
+  border-radius: var(--radius-md);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.method-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--border-accent);
+}
+
+.method-num {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-widest);
+  color: var(--accent);
+  opacity: 0.6;
+  margin-bottom: var(--sp-4);
+  display: block;
+}
+
+.method-card h3 {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: var(--sp-3);
+}
+
+.method-card p {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--text-on-dark-secondary);
+}
+
+
+/* ════════════════════════════════
+   TECNOLOGÍAS
+════════════════════════════════ */
+
+.tech-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: var(--sp-20);
+  align-items: start;
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-1);
+  list-style: none;
+}
+
+.tech-item {
+  display: flex;
+  gap: var(--sp-4);
+  padding: var(--sp-5);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  align-items: flex-start;
+  transition:
+    box-shadow var(--duration-base),
+    transform var(--duration-base) var(--ease-spring),
+    border-color var(--duration-base);
+}
+
+.tech-item:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: rgba(98,71,170,0.2);
+}
+
+.tech-item__icon {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(98,71,170,0.2);
+  border-radius: var(--radius-sm);
+  color: var(--accent);
+  flex-shrink: 0;
+}
+
+.tech-item__icon svg { width: 16px; height: 16px; }
+
+.tech-item__name {
+  font-family: var(--font-display);
+  font-size: var(--text-sm);
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--text-on-light-primary);
+  margin-bottom: var(--sp-1);
+}
+
+.tech-item__desc {
+  font-size: var(--text-sm);
+  line-height: var(--leading-relaxed);
+  color: var(--text-on-light-muted);
+}
+
+
+/* ════════════════════════════════
    EQUIPO
 ════════════════════════════════ */
 
@@ -170,8 +307,6 @@
 
 .team-card__photo-placeholder svg { width: 32px; height: 32px; }
 
-.team-card__info {}
-
 .team-card__name {
   font-family: var(--font-display);
   font-size: var(--text-base);
@@ -200,68 +335,13 @@
 
 
 /* ════════════════════════════════
-   TECNOLOGÍAS
+   STUDIO CTA FINAL
 ════════════════════════════════ */
 
-.tech-layout {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: var(--sp-20);
-  align-items: start;
-}
-
-.tech-list {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: var(--sp-1);
-  list-style: none;
-}
-
-.tech-item {
-  display: flex;
-  gap: var(--sp-4);
-  padding: var(--sp-5);
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
-  background: var(--white);
-  box-shadow: var(--shadow-sm);
-  align-items: flex-start;
-  transition: box-shadow var(--duration-base), transform var(--duration-base) var(--ease-spring), border-color var(--duration-base);
-}
-
-.tech-item:hover {
-  box-shadow: var(--shadow-md);
-  transform: translateY(-2px);
-  border-color: rgba(98,71,170,0.2);
-}
-
-.tech-item__icon {
-  width: 36px;
-  height: 36px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(98,71,170,0.2);
-  border-radius: var(--radius-sm);
-  color: var(--accent);
-  flex-shrink: 0;
-}
-
-.tech-item__icon svg { width: 16px; height: 16px; }
-
-.tech-item__name {
-  font-family: var(--font-display);
-  font-size: var(--text-sm);
-  letter-spacing: var(--tracking-wide);
-  text-transform: uppercase;
-  color: var(--text-on-light-primary);
-  margin-bottom: var(--sp-1);
-}
-
-.tech-item__desc {
-  font-size: var(--text-sm);
-  line-height: var(--leading-relaxed);
-  color: var(--text-on-light-muted);
+.studio-cta {
+  max-width: 560px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 
@@ -270,22 +350,23 @@
 ════════════════════════════════ */
 
 @media (max-width: 1024px) {
-  .about-intro   { gap: var(--sp-12); }
-  .tech-layout   { gap: var(--sp-12); }
-  .team-grid     { grid-template-columns: 1fr; }
+  .about-intro { gap: var(--sp-12); }
+  .tech-layout { gap: var(--sp-12); }
+  .team-grid   { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 860px) {
-  .about-intro   { grid-template-columns: 1fr; }
-  .mv-grid       { grid-template-columns: 1fr; }
-  .values-grid   { grid-template-columns: 1fr 1fr; }
-  .tech-layout   { grid-template-columns: 1fr; }
-  .tech-list     { grid-template-columns: 1fr; }
-  .team-grid     { grid-template-columns: 1fr; max-width: 480px; }
+  .about-intro { grid-template-columns: 1fr; }
+  .mv-grid     { grid-template-columns: 1fr; }
+  .values-grid { grid-template-columns: 1fr 1fr; }
+  .tech-layout { grid-template-columns: 1fr; }
+  .tech-list   { grid-template-columns: 1fr; }
+  .team-grid   { grid-template-columns: 1fr; max-width: 480px; }
+  .grid-2-cols { grid-template-columns: 1fr; gap: var(--sp-6); }
 }
 
 @media (max-width: 540px) {
   .about-intro__stats { grid-template-columns: 1fr; }
-  .values-grid   { grid-template-columns: 1fr; }
-  .team-card     { flex-direction: column; }
+  .values-grid        { grid-template-columns: 1fr; }
+  .team-card          { flex-direction: column; }
 }
